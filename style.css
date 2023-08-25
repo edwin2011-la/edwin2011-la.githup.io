@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 2px dashed red;*/
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 230px;
+  height: 380px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+img {
+  width: 230px;
+  height: 380px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.beg {
+  position: relative;
+  bottom: 60px;
+  right: 60px;
+  color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+  font-size: 9.5px;
+  line-height: 120%;
+  letter-spacing: 2px;
+}
+
+.above {
+  position: relative;
+  bottom: 35px;
+  left: 18px;
+  font-family: Fraunces;
+  line-height: 25px;
+  max-width: 70%;
+}
+
+.below {
+  position: relative;
+  bottom: 20px;
+  left: 18px;
+  line-height: 22px;
+  color: hsl(212, 21%, 14%);
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Montserrat;
+  max-width: 90%;
+}
+
+.price {
+  display: flex;
+  position: relative;
+  top: 5px;
+  right: 25px;
+  color: hsl(158, 70%, 27%);
+  font-family: Fraunces;
+  font-size: 17px;
+}
+
+#strike {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  padding: 12px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  background-color: hsl(158, 51%, 26%);
+  font-family: Montserrat;
+  cursor: grab;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+@media (width<= 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+
+  .text {
+    width: 300px;
+    height: 320px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0%;
+  }
+
+  .beg {
+    position: relative;
+    bottom: 15px;
+    right: 70px;
+    margin-bottom: 5px;
+  }
+
+  .above {
+    position: relative;
+    left: 40px;
+    bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .below {
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+    max-width: 80%;
+  }
+
+  .price {
+    position: relative;
+    top: 3px;
+    right: 37px;   
+  }
+
+  #strike{
+    position: relative;
+    top: 15px;
+  }
+
+  .button {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 4px;
+  }
+}
